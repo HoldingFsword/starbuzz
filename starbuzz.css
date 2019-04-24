@@ -7,7 +7,6 @@ body {
 
 #picter2{
   display: block;
-  background-color: #675c47;
   background-image: url(images/hearder.gif);
   width: 400px;
   height: 108px;
@@ -36,7 +35,7 @@ body {
   color:            #efe5d0;
   text-align:       center;
   padding:          15px;
-  margin: 0px 10px 10px 10px
+  margin: 0px 10px 10px 10px;
   font-size:        90%;
 }
 
@@ -62,28 +61,27 @@ a:visited {
   text-decoration:  none;
   border-bottom:    thin dotted #675c47;
 }
-#a1{
-  width: 800px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #675c47;
-  margin-left: auto;
-  margin-right: auto;
-}
 div#tableContaier{
   display:table;
 }
 div#tableRow{
   display:table-row;
 }
-#drinks{
+tableContainer{
+  display: table;
+  border-spacing: 10px;
+}
+tableRow{
+  display: table-row;
+}
+drinks{
   display:table-cell;
-  background-color: #efe5d0;
+  background-color: #efe5d0 ;
   width: 20%;
   padding: 15px;
   vertical-align:top;
 }
-#picter{
+picter{
   display: inline-block;
   background-color: #675c47;
   margin:0px 10px 10px 10px;
@@ -115,4 +113,42 @@ header {
   position: fixed;
   top: 350px;
   transform: translate(250px);
+}
+ul{
+  background-color: #efe5d0;
+  margin: 10px 10px 0px 10px;
+  list-style-type: none;
+  padding: 5px 0px 5px 10px;
+}
+ul li{
+  display: inline;
+  padding: 5px 10px 5px 10px;
+}
+ul li a:link, ul li a:visited{
+  color: #954b4b;
+  border-bottom: none;
+  font-weight: bold;
+}
+ul li.selected{
+  background-color: #c8b99c;
+}
+nav{
+  background-color: #efe5d0;
+  margin: 10px 10px 0px 10px;
+}
+nav ul{
+  margin: 0px;
+  list-style-type: none;
+  padding: 5px 0px 5px 0px;
+}
+nav ul li{
+  display: inline;
+  padding: 5px 10px 5px 10px;
+}
+nav ul li a:link, nav ul li a:visited{
+  color: #954b4b;
+  border-width: bold;
+}
+nav ul li.selected{
+  background-color: #c8b99c;
 }
